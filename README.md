@@ -14,11 +14,13 @@ Three decades of shipping software, from dell.com engineering to leading develop
 
 ### Latest writing
 
-<!-- BLOG-POST-LIST:START -->- [Build an outbound voice agent that waits on hold](https://petermckee.dev/blog/build-an-outbound-voice-agent-that-waits-on-hold) · <sub>Nov 2, 2026</sub>
+<!-- BLOG-POST-LIST:START -->
+- [Build an outbound voice agent that waits on hold](https://petermckee.dev/blog/build-an-outbound-voice-agent-that-waits-on-hold) · <sub>Nov 2, 2026</sub>
 - [Handle barge-in without your voice agent repeating itself](https://petermckee.dev/blog/handle-barge-in-without-your-voice-agent-repeating-itself) · <sub>Oct 29, 2026</sub>
 - [How to measure voice-to-voice latency in a realtime voice agent](https://petermckee.dev/blog/how-to-measure-voice-to-voice-latency-in-a-realtime-voice-agent) · <sub>Oct 29, 2026</sub>
 - [How to build a voice agent using LangChain and PolyAI&#39;s realtime voice model](https://petermckee.dev/blog/build-a-voice-agent-using-langchain-and-polyai) · <sub>Oct 23, 2026</sub>
 - [Add a Voice Assistant to Any Website with Dialog-RSN-1](https://petermckee.dev/blog/add-a-voice-assistant-to-any-website) · <sub>Oct 22, 2026</sub>
+
 <!-- BLOG-POST-LIST:END -->
 
 [All posts →](https://petermckee.dev/blog) · [RSS](https://petermckee.dev/rss.xml)
