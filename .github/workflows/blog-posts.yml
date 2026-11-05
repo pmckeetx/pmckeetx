@@ -13,13 +13,14 @@ jobs:
     name: Refresh "Latest writing" from petermckee.dev
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://www.petermckee.dev/rss.xml"
           max_post_count: 5
           date_format: "UTC:mmm d, yyyy"
           template: "- [$title]($url) · <sub>$date</sub>$newline"
+          tag_post_pre_newline: true # keeps the first post off the START marker line
           commit_message: "Update latest blog posts"
           committer_username: "github-actions[bot]"
           committer_email: "41898282+github-actions[bot]@users.noreply.github.com"
