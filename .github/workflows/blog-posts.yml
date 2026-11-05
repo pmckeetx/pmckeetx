@@ -1,0 +1,25 @@
+name: Latest blog posts
+
+on:
+  schedule:
+    - cron: "17 12 * * *" # once a day, 6:17am Central
+  workflow_dispatch: # run it by hand from the Actions tab
+
+permissions:
+  contents: write # lets the workflow commit the updated README
+
+jobs:
+  update-readme:
+    name: Refresh "Latest writing" from petermckee.dev
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://www.petermckee.dev/rss.xml"
+          max_post_count: 5
+          date_format: "UTC:mmm d, yyyy"
+          template: "- [$title]($url) · <sub>$date</sub>$newline"
+          commit_message: "Update latest blog posts"
+          committer_username: "github-actions[bot]"
+          committer_email: "41898282+github-actions[bot]@users.noreply.github.com"
